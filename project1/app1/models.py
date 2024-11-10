@@ -9,6 +9,7 @@ class Person(models.Model):
     age=models.IntegerField(blank=False,null=False)
     email=models.EmailField(unique=True,blank=True,null=True)
     city=models.CharField(max_length=100)
+    image=models.FileField(upload_to='person_image',null=True)
 
 
     def __str__(self) -> str:
