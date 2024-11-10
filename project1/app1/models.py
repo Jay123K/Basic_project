@@ -10,6 +10,7 @@ class Person(models.Model):
     email=models.EmailField(unique=True,blank=True,null=True)
     city=models.CharField(max_length=100)
 
+
     def __str__(self) -> str:
         return self.name
 

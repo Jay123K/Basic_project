@@ -4,5 +4,4 @@ from .models import Person
 class PersonForm(ModelForm):
     class Meta:
         model=Person
-        fields="__all__"
-        
+        fields='__all__'
